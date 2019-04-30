@@ -1,0 +1,325 @@
+.page-header {
+  min-height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10000;
+  background: #ffffff;
+  transition: height 0.3s ease-in-out 0s;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    height: auto;
+    max-height: unset;
+  }
+
+  .logo-holder{
+    & > a{
+      &:before{
+        display: none;
+      }
+    }
+
+    @media (max-width: 992px) {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 480px) {
+      margin: 0;
+    }
+  }
+
+  &.small{
+    min-height: 80px;
+    max-height: 80px;
+    transition: height 0.3s ease-in-out 0s;
+
+    @media (max-width: 992px) {
+      max-height: unset;
+    }
+
+    li{
+      a{
+        justify-content: space-around!important;
+      }
+    }
+
+    .logo-holder{
+      min-height: 80px;
+
+      @media(max-width: 992px){
+        margin: 0;
+        min-height: unset;
+      }
+
+      & > a{
+        @media (max-width: 667px) {
+          padding: 5px 0!important;
+        }
+
+        @media (max-width: 667px) {
+          padding: 0!important;
+
+          @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            text-align: center;
+          }
+        }
+
+
+      }
+    }
+
+    a{
+      padding: 5px 0;
+      font-size: 10px;
+      transition: .4s;
+
+      @media (max-width: 667px) {
+        padding: 40px 2px 5px 2px!important;
+        transition: .4s;
+      }
+
+      &:before{
+        content: '';
+        transform: scale(.87);
+        transition: .4s;
+
+        @media (max-width: 667px) {
+          top: 0!important;
+        }
+      }
+
+      img{
+        transition: .4s;
+        max-width: 90%;
+
+        @media (max-width: 992px) {
+          max-width: unset;
+          transform: scale(.85);
+        }
+
+        @media (max-width: 480px) {
+          transform: unset;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .logo-holder{
+    max-width: 47%;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+
+    @media (max-width: 1024px) {
+      max-width: 35%;
+      padding: 0 20px;
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        max-width: 100%!important;
+      }
+    }
+
+    @media (max-width: 992px) {
+      max-width: unset;
+      padding: 0;
+      min-height: unset;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 3px;
+    }
+
+    a{
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+
+      img{
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .main-nav{
+    width: 100%;
+
+    &__list{
+      width: 100%;
+    }
+
+    ul{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      li{
+        flex: 1;
+        position: relative;
+        text-align: center;
+
+        &:nth-child(1){
+          &:before{
+            content: '';
+
+            @media (max-width: 992px) {
+              display: none;
+            }
+          }
+        }
+
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          left: -1px;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background: #fff;
+
+          @media (max-width: 992px) {
+            left: 0;
+          }
+        }
+
+        a{
+          padding: 65px 2px 15px 2px;
+
+          @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: inline-block;
+          }
+
+          @media(max-width: 1024px){
+            font-size: 10px;
+          }
+
+          @media (max-width: 667px) {
+            font-size: 8px;
+            padding: 50px 2px 10px 2px;
+            text-align: center;
+          }
+
+          &:before{
+            content: '';
+            display: block;
+            background-size: cover;
+            transition: .4s;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+            @media (max-width: 667px) {
+              left: unset;
+              top: 8px;
+              transform: scale(.7);
+
+              @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                left: 0!important;
+                right: 0!important;
+                margin: 0 auto!important;
+              }
+            }
+          }
+        }
+
+        &.current-menu-item{
+          a{
+            color: $primary-color;
+          }
+        }
+      }
+
+      a{
+        color: #fff;
+        background: $secondary-color;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        letter-spacing: 0.73px;
+        transition: .4s;
+
+        &:hover{
+          color: $primary-color;
+          transition: .4s;
+        }
+      }
+    }
+  }
+
+  .chat{
+    a{
+      &:before{
+        background: url("../images/icons/chat.svg") no-repeat;
+        width: 46px;
+        height: 42px;
+      }
+    }
+  }
+
+  .email{
+    a{
+      &:before{
+        background: url("../images/icons/email.svg") no-repeat;
+        width: 39px;
+        height: 33px;
+      }
+    }
+  }
+
+  .phone{
+    a{
+      &:before{
+        background: url("../images/icons/phone.svg") no-repeat;
+        width: 38px;
+        height: 35px;
+      }
+    }
+  }
+
+  .quote{
+    a{
+      &:before{
+        background: url("../images/icons/quote.svg") no-repeat;
+        width: 38px;
+        height: 33px;
+      }
+    }
+  }
+
+  .submit{
+    a{
+      &:before{
+        background: url("../images/icons/submit.svg") no-repeat;
+        width: 38px;
+        height: 37px;
+      }
+    }
+  }
+
+  .search{
+    a{
+      &:before{
+        background: url("../images/icons/search.svg") no-repeat;
+        width: 40px;
+        height: 37px;
+      }
+    }
+  }
+}

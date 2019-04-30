@@ -1,0 +1,31 @@
+// Кнопки
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  outline: 0 none;
+  border: 0 none;
+  border-radius: 0;
+  padding: 19px 0;
+  background-color: $primary-color;
+  text-transform: uppercase;
+  color: #000000;
+  width: 215px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+
+  &:hover{
+    background-color: $link-color--hover;
+  }
+
+  &.dark{
+    background-color: #000000;
+    color: #ffffff;
+  }
+}

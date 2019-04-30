@@ -1,0 +1,130 @@
+.page-info{
+  font-family: 'Work Sans', sans-serif;
+
+  h1{
+    font-size: 52px;
+    text-transform: capitalize;
+
+    @media(max-width: 768px) {
+      font-size: 46px;
+    }
+
+    @media (max-width: 667px) {
+      font-size: 35px;
+    }
+  }
+
+  hr{
+    color: #e3e3e3;
+    background-color: #e3e3e3;
+    height: 2px;
+    border: none;
+    margin: 40px 0;
+
+    @media (max-width: 667px) {
+      margin: 20px 0;
+    }
+  }
+
+  p, ul, ol{
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 26px;
+  }
+
+  strong{
+    font-weight: 600;
+  }
+
+  ul, ol{
+    li{
+      margin-bottom: 5px;
+    }
+  }
+
+  a{
+    color: $primary-color;
+    font-weight: 600;
+
+    &:hover{
+      color: $link-color--hover;
+    }
+  }
+
+  a[href^="tel:"] {
+    color: #000;
+    font-weight: 400;
+  }
+
+  h2{
+    font-size: 34px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  .page-content{
+    max-width: 850px;
+    padding: 0 15px;
+    margin: 0 auto 80px;
+
+    @media (max-width: 667px) {
+      margin: 0 auto 35px;
+    }
+  }
+
+  .additional{
+    background: $primary-color;
+    padding: 60px 0;
+
+    @media (max-width: 768px) {
+      padding: 20px 0;
+    }
+
+    .text{
+      flex-basis: 31%;
+
+      h1, h2, h3, h4, h5{
+        margin-top: 0;
+      }
+
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+    }
+
+    .image{
+      flex-basis: 63%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (max-width: 850px) {
+        padding-bottom: 56.6%;
+        margin-top: 10px;
+      }
+    }
+
+    &__content{
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 15px;
+
+      a{
+        color: inherit;
+        font-weight: inherit;
+      }
+
+      @media (max-width: 850px) {
+        flex-direction: column;
+      }
+    }
+  }
+}

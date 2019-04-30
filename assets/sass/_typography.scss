@@ -1,0 +1,74 @@
+//  Подключения шрифтов
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800');
+
+// font-family: 'WorkSans';
+// font-weight: normal;
+/*@font-face {
+  font-family: 'WorkSans';
+  font-weight: normal;
+  src:  local('WorkSans'), local('WorkSans-Regular');
+  src:  url('../fonts/WorkSans-Regular/WorkSans-Regular.eot');
+  src:  url('../fonts/WorkSans-Regular/WorkSans-Regular.woff') format('woff'),
+  url('../fonts/WorkSans-Regular/WorkSans-Regular.ttf') format('truetype');
+}*/
+
+// font-family: 'WorkSans';
+// font-weight: 700;
+/*@font-face {
+  font-family: 'WorkSans';
+  font-weight: normal;
+  src:  local('WorkSans'), local('WorkSans-SemiBold');
+  src:  url('../fonts/WorkSans-SemiBold/WorkSans-SemiBold.eot');
+  src:  url('../fonts/WorkSans-SemiBold/WorkSans-SemiBold.woff') format('woff'),
+  url('../fonts/WorkSans-SemiBold/WorkSans-SemiBold.ttf') format('truetype');
+}*/
+
+// font-family: 'WorkSans';
+// font-weight: 900;
+/*@font-face {
+  font-family: 'WorkSans';
+  font-weight: bold;
+  src:  local('WorkSans'), local('WorkSans-ExtraBold');
+  src:  url('../fonts/WorkSans-ExtraBold/WorkSans-ExtraBold.eot');
+  src:  url('../fonts/WorkSans-ExtraBold/WorkSans-ExtraBold.woff') format('woff'),
+  url('../fonts/WorkSans-ExtraBold/WorkSans-ExtraBold.ttf') format('truetype');
+}*/
+
+// font-family: 'Icomoon';
+// font-weight: normal;
+@font-face {
+  font-family: 'Icomoon';
+  font-weight: normal;
+  src:  local('Icomoon'), local('Icomoon');
+  src:  url('../fonts/icomoon/icomoon.eot');
+  src:  url('../fonts/icomoon/icomoon.woff') format('woff'),
+  url('../fonts/icomoon/icomoon.ttf') format('truetype');
+}
+
+// Заголовки
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 52px;
+  color: #000000;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}

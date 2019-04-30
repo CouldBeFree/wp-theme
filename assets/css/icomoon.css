@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2frfas');
+  src:  url('fonts/icomoon.eot?2frfas#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2frfas') format('truetype'),
+    url('fonts/icomoon.woff?2frfas') format('woff'),
+    url('fonts/icomoon.svg?2frfas#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-point-to-right:before {
+  content: "\e900";
+}
+.icon-up-arrow:before {
+  content: "\e901";
+}
+.icon-up-arrow-bg .path1:before {
+  content: "\e902";
+  color: rgb(79, 186, 111);
+}
+.icon-up-arrow-bg .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(79, 186, 111);
+}
+.icon-up-arrow-bg .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-up-chevron-button:before {
+  content: "\e905";
+}
